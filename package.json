@@ -1,0 +1,19 @@
+{
+  "name": "job-listing-app",
+  "version": "1.0.0",
+  "description": "Job Listing Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RahuRabh/Cuvette-Job-Listing.git"
+  },
+  "author": "Rahul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RahuRabh/Cuvette-Job-Listing/issues"
+  },
+  "homepage": "https://github.com/RahuRabh/Cuvette-Job-Listing#readme"
+}
