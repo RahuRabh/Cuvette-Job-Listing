@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/RahuRabh/Cuvette-Job-Listing/issues"
   },
-  "homepage": "https://github.com/RahuRabh/Cuvette-Job-Listing#readme"
+  "homepage": "https://github.com/RahuRabh/Cuvette-Job-Listing#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.1.3"
+  }
 }
