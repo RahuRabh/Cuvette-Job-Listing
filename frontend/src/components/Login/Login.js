@@ -19,6 +19,7 @@ export default function Login() {
     const response = await loginUser(formData.email, formData.password);
 
     if (response.name) {
+      localStorage.setItem("token", response?.token)
       navigate("/");
     }
   };
@@ -45,9 +46,6 @@ export default function Login() {
       ></input>
       <button onClick={handleSubmit} className={styles.button}>
         Sign in
-      </button>
-      <button onClick={() => console.log("Hi")} className={styles.button}>
-        click karo
       </button>
       <p className={styles.footer}>
         Don&apos;t have an account?
