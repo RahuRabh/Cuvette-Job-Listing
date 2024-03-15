@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { DEFAULT_SKILLS } from "../../utils/constants";
 import { createJobPost, updateJobPostById } from "../../apis/job";
 import styles from "./JobPost.module.css";
 
+
 export default function JobPost() {
+
+    const navigate = useNavigate()
     const { state } = useLocation();
     const [stateData] = useState(state?.jobDetails);
     const [formData, setFormData] = useState({
@@ -69,15 +72,21 @@ export default function JobPost() {
 
         if (state?.edit) {
             updateJobPostById(state?.id, formData);
+            alert("Job updated successfully!")
+            navigate("/")
             return;
         }
 
         await createJobPost(formData);
+        alert("Job added successfully!")
+        navigate("/")
     };
 
     useEffect(() => {
         console.log(formData);
     }, [formData]);
+
+    
 
     return (
         <div className={styles.container}>
@@ -268,7 +277,7 @@ export default function JobPost() {
             <button onClick={handleSubmit} className={styles.add}>
                 {state?.edit ? "Edit Job" : "+ Add Job "}
             </button>
-            <button className={styles.cancel}>Cancel</button>
+
         </div>
     );
 }

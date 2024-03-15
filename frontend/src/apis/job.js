@@ -34,3 +34,13 @@ export const updateJobPostById = async (jobPostId, updatedFormData) => {
     console.log(error);
   }
 };
+
+export const getAllJobPost = async (filter) => {
+  try {
+    const reqUrl = `${backendUrl}/job/allJobs?title=${filter?.title}&skills=${filter?.skills}`;
+    const response = await axios.get(reqUrl);
+    return response.data;
+  } catch (error) {
+    console.log(error);
+  }
+};

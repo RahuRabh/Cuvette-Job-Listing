@@ -33,7 +33,7 @@ const JobDetails = ({}) => {
             {jobDetails ? (
                 <div className={styles.body}>
                     <div className={styles.nav}>
-                        <p className={styles.navText}>Jobfinder</p>
+                        <p className={styles.navText}>Job Finder</p>
                         <div className={styles.btnGrp}>
                             <button className={styles.login}>Login</button>
                             <button className={styles.register}>

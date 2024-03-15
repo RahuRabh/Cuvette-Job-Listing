@@ -4,51 +4,49 @@ body {
 
 .nav {
   width: 100vw;
-  height: 10vh;
-  border-radius: 0px 0px 50px 50px;
-  background: #ed5353;
+  height: 12vh;
+  background: #3f1b81;
   display: flex;
   justify-content: space-between;
-  padding: 2vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
   box-sizing: border-box;
   align-items: center;
 }
 .navText {
   color: white;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 800;
 }
 .login {
   border-radius: 6px;
   padding: 0.5em 1em;
   border: 2px solid white;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 700;
   background: transparent;
 }
 
 .btnGrp {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .register {
   border-radius: 6px;
   padding: 0.5em 1em;
   border: 2px solid white;
-  color: #ed5353;
-  font-weight: 600;
+  color: #3f1b81;
+  font-weight: 700;
   background: white;
 }
 
 .container {
   width: 80vw;
-  position: fixed;
-  top: 15vh;
-  left: 10vw;
-  margin-right: auto;
+  margin-top: 5vh;
+  margin-left: 18vh;
   box-sizing: border-box;
-  padding: 2rem 1rem;
+  padding: 1px;
   background-color: white;
   box-shadow: 0px 4px 23px 2px rgba(0, 0, 0, 0.1);
   z-index: 2;
@@ -57,7 +55,7 @@ body {
 
 .containerBottom {
   width: 80vw;
-  margin: 30vh auto;
+  margin: 10vh auto;
   background-color: white;
   box-shadow: 0px 4px 23px 2px rgba(0, 0, 0, 0.1);
   padding: 2rem 1rem;
@@ -65,12 +63,14 @@ body {
 }
 
 .lightText {
-  color: #999999;
+  color: #878686;
 }
 
 .containerText {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ed5353;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .boldText {

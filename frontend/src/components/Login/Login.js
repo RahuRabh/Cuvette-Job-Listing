@@ -20,7 +20,8 @@ export default function Login() {
 
     if (response.name) {
       localStorage.setItem("token", response?.token)
-      navigate("/");
+      navigate("/job-post");
+      // navigate("/")
     }
   };
 
