@@ -12,8 +12,8 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/job-details/:id" element={<JobDetailsPage />} />
-        {/* <Route path="/job-post" element={<ProtectedRoutes Component={JobPostPage} />} /> */}
-        <Route path="/job-post" element={<JobPostPage />} />
+        <Route path="/job-post" element={<ProtectedRoutes Component={JobPostPage} />} />
+        {/* <Route path="/job-post" element={<JobPostPage />} /> */}
         <Route path="/" element={<HomePage />} />
       </Routes>
     </BrowserRouter>
